@@ -1,6 +1,5 @@
 package com.fuvidy.springcache.config;
 
-
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.CacheManager;
 import org.springframework.context.annotation.Bean;
@@ -20,11 +19,11 @@ import java.util.Set;
 
 @Configuration
 public class RedisCacheConfig {
-    @Value("${cache.default.expire-time:1000}")
+    @Value("${cache.default.expire-time}")
     private int defaultExpireTime;
-    @Value("${cache.user.expire-time:1000}")
+    @Value("${cache.user.expire-time}")
     private int userCacheExpireTime;
-    @Value("${cache.user.name:qwe}")
+    @Value("${cache.user.name}")
     private String userCacheName;
 
     /**
@@ -56,7 +55,6 @@ public class RedisCacheConfig {
                 .cacheDefaults(defaultCacheConfig)
                 .initialCacheNames(cacheNames)
                 .withInitialCacheConfigurations(configMap)
-
                 .build();
         return cacheManager;
     }

@@ -7,6 +7,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cache/pom.xml" />
         <option value="$PROJECT_DIR$/spring-security/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-oauth/password-credentials/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-oauth/resource-server/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-oauth/sso/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-oauth/sso-service/pom.xml" />
       </list>
     </option>
   </component>

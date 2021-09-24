@@ -7,16 +7,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-cache" />
+        <module name="password-credentials" />
+        <module name="resource-server" />
         <module name="spring-security" />
-        <module name="practice" />
+        <module name="sso-service" />
+        <module name="spring-cache" />
+        <module name="sso" />
+        <module name="spring-oauth" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="password-credentials" options="-parameters" />
+      <module name="resource-server" options="-parameters" />
       <module name="spring-cache" options="-parameters" />
       <module name="spring-security" options="-parameters" />
+      <module name="sso" options="-parameters" />
+      <module name="sso-service" options="-parameters" />
     </option>
   </component>
 </project>
